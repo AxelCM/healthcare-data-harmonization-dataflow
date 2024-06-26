@@ -31,8 +31,8 @@ mkdir -p "${CURR_DIR}/lib"
 
 
 # At this point, we require OpenJDK 8.
-readonly JNI_DIR="/usr/lib/jvm/java-11-openjdk-amd64/include"
-readonly JNI_DIR_LINUX="/usr/lib/jvm/java-11-openjdk-amd64/include/linux"
+readonly JNI_DIR="/usr/lib/jvm/java-11-openjdk-arm64/include"
+readonly JNI_DIR_LINUX="/usr/lib/jvm/java-11-openjdk-arm64/include/linux"
 
 # Data harmonization repo.
 readonly DH_REPO="${DH_REPO:-https://github.com/GoogleCloudPlatform/healthcare-data-harmonization.git}"
