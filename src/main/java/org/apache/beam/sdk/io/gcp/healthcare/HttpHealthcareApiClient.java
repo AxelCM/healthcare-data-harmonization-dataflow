@@ -586,6 +586,9 @@ public class HttpHealthcareApiClient implements HealthcareApiClient, Serializabl
       throw HealthcareHttpException.of(statusCode, content);
     }
     HttpBody responseModel = new HttpBody();
+    //Debug code: print the response content
+    LOG.debug("Response content: " + content);
+    LOG.info("Response status code: " + statusCode);
     responseModel.setData(content);
     return responseModel;
   }
