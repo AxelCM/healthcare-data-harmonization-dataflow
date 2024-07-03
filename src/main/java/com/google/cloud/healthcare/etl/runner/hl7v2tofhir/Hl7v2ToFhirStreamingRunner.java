@@ -269,6 +269,10 @@ public class Hl7v2ToFhirStreamingRunner {
   }
 
   public static void main(String[] args) {
+    // print args for debugging.
+    for (String arg : args) {
+      System.out.println(arg);
+    }
     Pipeline pipeline = createPipeline(args);
     pipeline.run();
   }
